@@ -41,7 +41,7 @@ function NavbarView(props) {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           {/* <!-- Search Bar Starts --> */}
-          <form className="form-inline px-lg-5" noValidate method="get">
+          <form className="fo rm-inline px-lg-5" noValidate method="get">
             <div className="input-group">
               <div className="input-group-prepend">
                 <div className="dropdown">
@@ -120,7 +120,7 @@ function NavbarView(props) {
               <div className="dropdown-menu px-3" aria-labelledby="userAccount">
                 <div className="d-flex flex-column justify-content-center">
                   <Link to="/login" className="btn btn-warning w-75 btn-sm font-weight-bold">Signin</Link>
-                  <small>New customer?<a href="register.html"> Start here.</a></small>
+                  <small>New customer?<Link to="/register"> Start here.</Link></small>
                 </div>
               </div>
             </li>
