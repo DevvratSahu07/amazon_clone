@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function NavbarView(props) {
   return (
     <React.Fragment>
@@ -22,7 +22,7 @@ function NavbarView(props) {
             <div className="drawer-body">
               <h6 className="text-muted text-uppercase">Help & Settings</h6>
               <a href="your_account.html" className="btn btn-outline-success my-2 btn-sm">You Account</a>
-              <a href="login.html" className="btn btn-warning my-2  btn-sm">Sign in</a>
+              <Link to="/login" className="btn btn-warning my-2  btn-sm">Sign in</Link>
             </div>
             <div className="drawer-footer">
               <button type="button" className="btn btn-outline-danger btn-sm" data-dismiss="drawer" aria-label="Close">
@@ -32,9 +32,9 @@ function NavbarView(props) {
           </div>
         </div>
         {/* <!-- Drawer Ends --> */}
-        <a className="navbar-brand pl-2" href="navbar.html">
+        <Link className="navbar-brand pl-2" to="/">
           <img src="assets/img/amazon_logo_white.png" height="30" width="100" alt="amazon logo white" />
-        </a>
+        </Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -119,7 +119,7 @@ function NavbarView(props) {
               </a>
               <div className="dropdown-menu px-3" aria-labelledby="userAccount">
                 <div className="d-flex flex-column justify-content-center">
-                  <a href="login.html" className="btn btn-warning w-75 btn-sm font-weight-bold">Signin</a>
+                  <Link to="/login" className="btn btn-warning w-75 btn-sm font-weight-bold">Signin</Link>
                   <small>New customer?<a href="register.html"> Start here.</a></small>
                 </div>
               </div>
