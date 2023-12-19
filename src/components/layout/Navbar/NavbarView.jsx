@@ -59,7 +59,7 @@ function NavbarView(props) {
                 </div>
               </div>
               <input type="text" className="form-control" size="50" name="query" id="query" />
-              <input type="text" name="category" id="category" value="book" hidden />
+              <input type="text" name="category" id="category" value="book" readOnly hidden />
               <div className="input-group-append">
                 <button type="submit" className="btn btn-warning">
                   <i className="fas fa-search"></i>
